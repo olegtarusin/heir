@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>debonaire</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240829221812">
+	<link rel="icon" href="favicon.ico" sizes="32x32">
+	<link rel="icon" href="img/favic/favicon.svg" type="image/svg+xml">
+	<link rel="apple-touch-icon" href="img/favic/apple-touch180x180.png">
+	<link rel="manifest" href="files/favic.webmanifest">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			overflow: hidden;
+		}
+
+		.loader {
+			background-color: #bc947f;
+			position: fixed;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			height: 100%;
+			z-index: 200;
+		}
+
+		.loaded .loader {
+			transition: opacity 1s linear 0s;
+			opacity: 0;
+			visibility: hidden;
+
+		}
+
+
+		.loader__container,
+		.loader__body {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.loader__body {
+			row-gap: 0.5em;
+			width: 300px;
+			min-height: 100px;
+		}
+
+		.loader__logo {
+			margin-bottom: 1em;
+		}
+
+		.loader__container {
+			height: 100%;
+		}
+
+
+		.loader__text {
+			color: #fff;
+			line-height: 120%;
+			letter-spacing: -1.5px;
+			font-size: 1em;
+		}
+
+		.loader__progressbox {
+			width: 100%;
+			height: 1em;
+			overflow: hidden;
+			border-radius: 5px;
+
+
+		}
+
+		.loader__progressline {
+			width: 100%;
+			height: 100%;
+			transform: translateX(-100%);
+			background-color: #fff;
+			position: relative;
+			transition: left 0.5s linear 0s;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<div class="loader">
+			<div class="loader__container">
+				<div class="loader__body">
+					<div class="loader__logo">
+						<img src="img/logo.svg" alt="logo">
+					</div>
+					<div class="loader__progressbox">
+						<div class="loader__progressline"></div>
+					</div>
+					<div class="loader__text">30%</div>
+				</div>
+			</div>
+		</div>
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#" class="menu__link">Menus</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">About & Careers</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+						</ul>
+					</nav>
+					<div class="menu__logo">
+						<img src="img/logo.svg" alt="logo">
+					</div>
+					<div class="menu__actions">
+						<button type="button" class="menu__button link" data-pop-link="form"><span>Book an
+								Appoitment</span></button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="titlepage">
+				<div class="titlepage__container">
+					<div class="titlepage__body">
+						<h1 class="titlepage__title">Hi, we are Debonaire.
+							Ready to create an art form on your body.</h1>
+						<div class="titlepage__image">
+							<picture><source srcset="img/picture-content/picture01.webp" type="image/webp"><img src="img/picture-content/picture01.jpg" alt="picture"></picture>
+							<div class="titlepage__decor decor">
+								<div class="decor__decitem dec1"><img src="img/decor/abstract-1.svg" alt="decor"></div>
+								<div class="decor__decitem dec2"><img src="img/decor/abstract-2.svg" alt="decor"></div>
+								<div class="decor__decitem dec3"><picture><source srcset="img/decor/stain01.webp" type="image/webp"><img src="img/decor/stain01.png" alt="decor"></picture></div>
+							</div>
+						</div>
+						<div class="titlepage__article">
+							<div class="titlepage__sub-image">
+								<picture><source srcset="img/picture-content/sub-picture01.webp" type="image/webp"><img src="img/picture-content/sub-picture01.png" alt="picture"></picture>
+							</div>
+							<p class="titlepage__text text">Debonaire is natural product-based, hair design & boutique.</p>
+						</div>
+					</div>
+
+				</div>
+			</section>
+			<div class="about-top">
+				<div class="about-top__container">
+					<div class="about-top__body">
+						<div class="about-top__left-image">
+							<picture><source srcset="img/picture-content/picture02.webp" type="image/webp"><img src="img/picture-content/picture02.jpg" alt="picture"></picture>
+							<div class="about-top__decor decor">
+								<div class="decor__decitem">
+									<svg viewBox="0 0 348 344" fill="none" xmlns="http://www.w3.org/2000/svg" data-anima-delay="1">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M8.22962 141.135C70.9002 -46.7917 189.79 -29.1891 219.282 96.5556C248.774 222.3 373.654 190.519 341.858 294.615C310.062 398.712 -54.441 329.061 8.22962 141.135Z" stroke="#E8E8E6" stroke-width="2" />
+									</svg>
+								</div>
+							</div>
+						</div>
+						<article class="about-top__article">
+							<h2 class="about-top__title title">We're focused.</h2>
+							<p class="about-top__text text">
+								We provide an exceptional service by only focusing on hair designing. Our goal is to provide a
+								different type of experience by using responsible products.
+							</p>
+						</article>
+						<div class="about-top__right-image">
+							<picture><source srcset="img/picture-content/picture03.webp" type="image/webp"><img src="img/picture-content/picture03.jpg" alt="picture"></picture>
+							<div class="about-top__decor decor">
+								<div class="decor__decitem">
+									<svg viewBox="0 0 494 371" fill="none" xmlns="http://www.w3.org/2000/svg" data-anima-delay="1.5">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M488.184 36.1618C472.569 -8.22165 400.348 -26.0372 338.863 77.4611C277.377 180.96 108.585 105.633 19.2604 180.96C-70.0643 256.286 189.541 469.095 338.863 315.789C488.184 162.484 503.8 80.5453 488.184 36.1618Z" stroke="#E8E8E6" stroke-width="2" />
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="about-bottom">
+				<div class="about-bottom__big-image">
+					<picture><source srcset="img/picture-content/picture04.webp" type="image/webp"><img src="img/picture-content/picture04.jpg" alt="picture"></picture>
+					<div class="about-bottom__decor decor">
+						<div class="decor__decitem">
+							<img src="img/decor/abstract-3.svg" alt="decor">
+						</div>
+					</div>
+				</div>
+				<div class="about-bottom__body">
+					<div class="about-bottom__container">
+						<div class="about-bottom__content">
+							<article class="about-bottom__article">
+								<h2 class="about-bottom__title title--big">We love what we do. We are up to the task.</h2>
+								<p class="about-bottom__text text">Cuts tailor made for your hair, making it easy for you to
+									recreate
+									your look every day. Debonaire team, makes you feel happy at ease and work with you to make you
+									your
+									most lovely.</p>
+							</article>
+							<div class="about-bottom__small-image">
+								<picture><source srcset="img/picture-content/picture05.webp" type="image/webp"><img src="img/picture-content/picture05.jpg" alt="icture"></picture>
+							</div>
+						</div>
+						<div class="about-bottom__decor-picture">
+							<picture><source srcset="img/decor/decor-picture.webp" type="image/webp"><img src="img/decor/decor-picture.png" alt="picture"></picture>
+							<div class="about-bottom__decor decor">
+								<div class="decor__decitem">
+									<svg viewBox="0 0 606 402" fill="none" xmlns="http://www.w3.org/2000/svg" data-anima-delay="1.5">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M483.079 42.2038C281.98 -81.464 -76.4973 91.671 16.6466 318.178C109.79 544.686 232.956 221.848 424.064 289.54C615.173 357.231 684.177 165.872 483.079 42.2038Z" stroke="#E6E6E6" stroke-width="2" />
+									</svg>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="service">
+				<div class="service__container">
+					<h2 class="service__title title">Our Services</h2>
+					<div class="service__body">
+						<div class="service__card">
+							<a href="#" class="service__cardlink card">
+								<div class="card__image">
+									<picture><source srcset="img/picture-content/picture06.webp" type="image/webp"><img src="img/picture-content/picture06.jpg" alt="photo"></picture>
+								</div>
+								<span class="card__group">Cut</span>
+							</a>
+						</div>
+						<div class="service__card card--revers">
+							<a href="#" class="service__cardlink card">
+								<div class="card__image">
+									<picture><source srcset="img/picture-content/picture07.webp" type="image/webp"><img src="img/picture-content/picture07.jpg" alt="photo"></picture>
+								</div>
+								<span class="card__group">Color</span>
+							</a>
+							<article class="service__titlebox" data-da=".service__container,768">
+								<h3 class="service__boxtitle title">We create a customized new look for you.</h3>
+								<a href="#" class="service__link link"><span>See Our Menu</span></a>
+							</article>
+							<div class="service__decor decor">
+								<div class="decor__decitem dec1">
+									<picture><source srcset="img/decor/stain02.webp" type="image/webp"><img src="img/decor/stain02.png" alt="decor"></picture>
+								</div>
+							</div>
+						</div>
+						<div class="service__card">
+							<a href="#" class="service__cardlink card">
+								<div class="card__image">
+									<picture><source srcset="img/picture-content/picture08.webp" type="image/webp"><img src="img/picture-content/picture08.jpg" alt="photo"></picture>
+								</div>
+								<span class="card__group">Design</span>
+							</a>
+							<div class="service__decor decor">
+								<div class="decor__decitem dec2">
+									<img src="img/decor/abstract-4.svg" alt="decor">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="baner">
+				<div class="baner__image">
+					<picture><source srcset="img/picture-content/picture09.webp" type="image/webp"><img src="img/picture-content/picture09.jpg" alt="bg"></picture>
+				</div>
+				<div class="baner__container">
+					<article class="baner__article">
+						<h2 class="baner__title title--big">We work with passion.</h2>
+						<p class="baner__text"> Our specialists are waiting to give you the treatments and services that you
+							deserve.</p>
+					</article>
+					<div class="baner__important">AND THE MOST IMPORTANT PART</div>
+				</div>
+			</div>
+			<div class="bookbox">
+				<div class="bookbox__container">
+					<div class="bookbox__body">
+						<div class="bookbox__left-image">
+							<picture><source srcset="img/picture-content/sub-picture03.webp" type="image/webp"><img src="img/picture-content/sub-picture03.jpg" alt="picture"></picture>
+						</div>
+						<div class="bookbox__big-image">
+							<picture><source srcset="img/picture-content/picture10.webp" type="image/webp"><img src="img/picture-content/picture10.jpg" alt="picture"></picture>
+							<div class="bookbox__decor decor">
+								<div class="decor__decitem dec1">
+									<img src="img/decor/abstract-5.svg" alt="decor">
+								</div>
+								<div class="decor__decitem dec2">
+									<picture><source srcset="img/decor/stain03.webp" type="image/webp"><img src="img/decor/stain03.png" alt="decor"></picture>
+								</div>
+							</div>
+						</div>
+						<div class="bookbox__right-box">
+							<div class="bookbox__right-image">
+								<picture><source srcset="img/picture-content/sub-picture02.webp" type="image/webp"><img src="img/picture-content/sub-picture02.jpg" alt="picture"></picture>
+							</div>
+							<article class="bookbox__article" data-da=".bookbox__body,480">
+								<h2 class="bookbox__title title">Let's make you
+									your best self.</h2>
+								<a href="#" class="bookbox__link link" data-pop-link="form"><span>Book an Appoitment</span></a>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body">
+					<nav class="footer__nav">
+						<ul class="footer__list">
+							<li class="footer__item-list"><a href="#" class="footer__link">Terms of Service</a></li>
+							<li class="footer__item-list"><a href="#" class="footer__link">Privacy Policy</a></li>
+						</ul>
+						<ul class="footer__list">
+							<li class="footer__item-list"><a href="#" class="footer__link">Instagram</a></li>
+							<li class="footer__item-list"><a href="#" class="footer__link">Facebook</a></li>
+						</ul>
+					</nav>
+					<article class="footer__article invitebox">
+						<h2 class="invitebox__title">We invite you to join our team.</h2>
+						<div class="invitebox__action"><a href="#" class="invitebox__link link"><span>Apply Now</span></a></div>
+					</article>
+
+				</div>
+			</div>
+		</footer>
+		<div class="popup" data-pop="form">
+			<div class="popup__wrapper">
+				<form action="#" enctype="multipart/form-data" class="popup__form" data-pop-body>
+
+					<article class="popup__body">
+						<button type="button" class="popup__close" data-pop-close><span></span></button>
+						<h2 class="popup__title title">Fill out the form</h2>
+						<p class="popup__text">Leave your name and email or phone number so that we can contact
+							you</p>
+						<div class="popup__inputbox">
+							<label for="popname" class="popup__label">Your name</label>
+							<input type="text" name="name" id="popname" class="popup__input text" placeholder="enter phone number or email">
+						</div>
+
+						<div class="popup__inputbox">
+							<label for="popinput" class="popup__label">Your email or phone number</label>
+							<input type="text" name="contact" id="popinput" class="popup__input text" placeholder="enter phone number or email">
+						</div>
+						<button type="submit" class="popup__button link"><span>Send contact</span></button>
+
+					</article>
+					<div class="popup__decor decor">
+						<div class="decor__decitem dec1"><img src="img/decor/abstract-3.svg" alt="decor"></div>
+						<div class="decor__decitem dec2"><img src="img/decor/abstract-5.svg" alt="decor"></div>
+						<div class="decor__decitem dec3"><img src="img/decor/abstract-4.svg" alt="decor"></div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+	</div>
+	<script src="js/app.min.js?_v=20240829221812"></script>
+</body>
+
+</html>
