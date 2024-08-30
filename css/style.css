@@ -148,20 +148,20 @@ h6 {
   object-fit: contain
 }
 .about-bottom__big-image,
-.about-bottom__big-image>img,
+.about-bottom__big-image>picture,
 .about-bottom__body,
 .about-bottom__container,
 .about-bottom__content,
-.about-bottom__decor-picture>img,
+.about-bottom__decor-picture>picture,
 .about-top,
 .about-top__left-image,
-.about-top__left-image>img,
+.about-top__left-image>picture,
 .about-top__right-image,
-.about-top__right-image>img,
+.about-top__right-image>picture,
 .baner,
 .baner__container,
 .bookbox__big-image,
-.bookbox__big-image>img,
+.bookbox__big-image>picture,
 .bookbox__left-image,
 .link,
 .menu,
@@ -177,18 +177,18 @@ h6 {
 .service__cardlink,
 .titlepage__body>*,
 .titlepage__image,
-.titlepage__image>img,
+.titlepage__image>picture,
 .titlepage__sub-image {
   position: relative
 }
-.about-bottom__big-image>img,
+.about-bottom__big-image>picture,
 .about-bottom__content,
-.about-bottom__decor-picture>img,
+.about-bottom__decor-picture>picture,
 .about-top,
-.about-top__left-image>img,
-.about-top__right-image>img,
+.about-top__left-image>picture,
+.about-top__right-image>picture,
 .baner__container,
-.bookbox__big-image>img,
+.bookbox__big-image>picture,
 .header::before,
 .menu__actions,
 .menu__body,
@@ -395,7 +395,7 @@ img {
   -webkit-transform: translateY(150px);
   transform: translateY(150px)
 }
-.about-bottom__decor-picture>img,
+.about-bottom__decor-picture>picture,
 .bookbox__link,
 .bookbox__right-image,
 .card__group,
@@ -403,7 +403,7 @@ img {
   -webkit-transform: scale(0);
   transform: scale(0)
 }
-.anima .about-bottom__decor-picture>img,
+.anima .about-bottom__decor-picture>picture,
 .anima .bookbox__link,
 .anima .bookbox__right-image,
 .anima .card__group,
@@ -579,7 +579,7 @@ body.pop-block {
   -webkit-transform: translateY(150px);
   transform: translateY(150px)
 }
-.titlepage__image>img {
+.titlepage__image>picture {
   z-index: 5
 }
 .titlepage__article {
@@ -722,7 +722,7 @@ body.pop-block {
   -webkit-transform: translate(0);
   transform: translate(0)
 }
-.about-bottom__big-image>img {
+.about-bottom__big-image>picture {
   width: 100%
 }
 .about-bottom__big-image .decor__decitem {
@@ -789,7 +789,7 @@ body.pop-block {
   -webkit-transform: translateX(75%);
   transform: translateX(75%)
 }
-.about-bottom__decor-picture>img {
+.about-bottom__decor-picture>picture {
   width: 100%
 }
 .about-bottom__decor-picture .decor__decitem {
